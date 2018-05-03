@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Plan Day</string>
+    <string name="facebook_app_id">443348159424152</string>
+    <string name="fb_login_protocol_scheme">fb443348159424152</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
 </resources>
