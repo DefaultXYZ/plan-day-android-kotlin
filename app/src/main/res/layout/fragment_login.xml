@@ -3,29 +3,59 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/transparent">
+    android:background="@android:color/transparent"
+    android:padding="10dp">
 
     <Button
-        android:id="@+id/sign_up"
-        style="@style/AppText.Large"
+        android:id="@+id/btn_google_sign_in"
+        style="@style/StyleText.Large"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/btn_action_background"
-        android:text="@string/sign_up"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/sign_in"
+        android:layout_marginBottom="10dp"
+        android:background="#FAFAFA"
+        android:drawableStart="@drawable/googleg_standard_color_18"
+        android:text="@string/login_with_google"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        app:layout_constraintBottom_toTopOf="@id/btn_facebook_sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/sign_in"
-        style="@style/AppText.Large"
+        android:id="@+id/btn_facebook_sign_in"
+        style="@style/StyleText.Large"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/com_facebook_blue"
+        android:drawableStart="@drawable/com_facebook_button_login_logo"
+        android:text="@string/login_with_facebook"
+        app:layout_constraintBottom_toTopOf="@id/btn_sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        style="@style/StyleText.Large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btn_action_background"
+        android:text="@string/sign_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_sign_in"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        style="@style/StyleText.Large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
         android:background="@drawable/btn_background"
         android:text="@string/sign_in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/sign_up" />
+        app:layout_constraintStart_toEndOf="@id/btn_sign_up" />
 </android.support.constraint.ConstraintLayout>
